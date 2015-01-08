@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root to: "paypal#index"
   post 'paypal/ipn'
   get 'paypal/index'
   # The priority is based upon order of creation: first created -> highest priority.
